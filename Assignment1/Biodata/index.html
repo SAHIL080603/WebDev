@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+</head>
+<body>
+    <h1>My Bio Data</h1>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="firstname">FirstName:</label>
+                <input type="text" name="FirstName" required placeholder="First Name" id="firstname">
+                <label for="lastname">LastName:</label>
+                <input type="text" name="LastName" required placeholder="Last Name" id="lastname">
+
+            </div>
+            <p>
+                <label>Male:<input type="radio" name="Gender"></label>
+                <label>Female:<input type="radio" name="Gender"></label>
+                <label>Other:<input type="radio" name="Gender"></label>
+            </p>
+            
+            <p>
+                <label>Date of Birth: <input type="date" required name="DOB"></label>
+            </p>
+
+            <p>
+                <label>E-mail: <input type="email" name="email" placeholder="Enter Your Email"></label>
+            </p>
+
+            <p>
+                <label>Phone: <input type="tel" name="phone" placeholder="+91" maxlength="10" minlength="10" required></label>
+            </p>
+            <p>
+                <label>Height: <input type="number" name="height" placeholder="Height in Feet" step=".01"></label>
+            </p>            
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label>School Name: <input type="text" name="School" required placeholder="School Name"></label>
+            <p>
+                <label>Class: <input type="text" name="Class" placeholder="Enter Class" required></label>
+            </p>
+            <p>
+                <label>Stream: </label>
+                <select name="stream" id="stream" required>
+                    <option value="">--Stream--</option>
+                    <option value="All (for below 8th class)">All (for below 8th class)</option>
+                    <optgroup label="For 9th and 10th">
+                        <option value="Hindi">Hindi</option>
+                        <option value="Sanskrit">Sanskrit</option>                        </optgroup>
+                    <optgroup label="For 11th and 12th">
+                        <option value="Arts">Arts</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Science">Science</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="Marksheet">Marksheet:</label>
+                <input type="file" name="Marksheet" id="Marksheet" required>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="Submit">
+        </p>
+    </form>
+</body>
+</html>
