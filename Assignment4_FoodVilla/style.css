@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: orange;
+    color: white;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 80px;
+}
+
+nav h1{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul a{
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 5px 10px 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* hovering */
+
+nav ul a:hover{
+    background-color: orangered;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#slideImage{
+    height: 40vw;
+
+    margin: 50px 6vw 0px 6vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px black;
+    
+}
+
+#slideImage div div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+        
+
+#img1{
+    
+    background-image: url("https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+#img2{
+   
+    background-image: url("https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+#img3{
+   
+    background-image: url("https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGRyaW5rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+#img4{
+ 
+    background-image: url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+#img5{
+    
+    background-image: url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#slideImage div{
+    height: 40vw;
+    width: 440vw;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+    background-color: slategray;
+    display: flex;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slider{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        
+        transform: translate(-44vw);
+    }
+    50%{
+        transform: translateX(-88vw);
+    }
+    75%{
+        transform: translateX(-132vw);
+    }
+    100%{
+        transform: translateX(-176vw);
+    }
+}
+
+article{
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+article section figure{
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+article section figure img{
+    width: 380px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    transition: 500ms;
+}
+
+article section img:hover{
+    transform: scale(1.5);
+}
+
+article section{
+    width: 380px;
+    height: 380px;
+    margin: 30px 10px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+article section div{
+    margin: 20px 10px 0px 20px;
+    padding-right: 10px;
+    
+}
+
+h2{
+    font-size: 1.9rem;
+    margin-top: 50px;
+    font-family: Playfair Display;
+    font-weight:900;
+    text-align: center;
+}
+
+#contact{
+    overflow: hidden;
+
+    margin: 50px 0 0 11vw;
+    box-shadow: 0px 0px 10px 0px black;
+
+    height: 390px;
+    position: absolute;
+
+    width: 77vw;
+    border-radius: 10px;
+    display: flex;
+}
+
+#form{
+    margin: 10px 0px 0px 10px;
+    border: none;
+}
+
+#formHeader{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    width: 18.5vw;
+    height: 40vh;
+
+}
+
+#formHeader h1{
+    font-size: 1.9rem;
+
+}
+
+#formHeader h1 i{
+    font-size: 3.9rem;
+}
+
+#form{
+    width:53vw;
+}
+
+#name{
+
+    display: flex;
+}
+#eContact{
+
+    display: flex;
+}
+
+
+
+#inputItem{
+    margin: 10px;
+
+    width: 23vw;
+    
+    padding: 10px;
+    border: 2px solid orange;
+}
+
+#textArea{
+
+    width: 48.8vw;
+    margin: 10px;
+    border: 2px solid orange;
+    padding: 10px;
+    display: flex;
+}
+
+#submitform{
+    width: 50.4vw;
+    height: 40px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+#submitform:hover{
+    
+    background-color: orangered;
+    
+}
+
+
+footer{
+    margin-top: 500px;
+    background-color: rgb(26, 26, 26);
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+}
+
+footer ul{
+    margin-top: 20px;
+}
+
+footer ul a{
+    background-color: orange;
+    border-radius: 100px;
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+}
+
+footer h4{
+    margin-top: 30px;
+    color: lightgrey;
+    font-family: Playfair Display;
+}
+
+
+
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width:900px) {
+    #formHeader{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 73vw;
+        height: 15vh;
+    }
+    #contact{
+        height: 600px;
+        display: block;
+    }
+    #inputItem{
+        width: 40vw;
+    }
+    #form{
+        width:74.5vw;
+    }
+    #textArea{
+        width: 69.5vw;
+    }
+    
+    #submitform{
+        width: 72.5vw;
+    }
+    footer{
+        margin-top: 700px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    nav h1{
+        padding-top: 6px;
+        font-size: 1.8rem;
+    }
+    nav{
+        padding-left: 30px;
+    }
+    nav ul a{
+        font-size: 0.8rem;
+        padding: 5px;
+        margin: 5px 10px 0px 10px;
+    }
+}
+
+@media screen and (max-width:535px) {
+    nav h1{
+        font-size: 1.5rem;
+    }
+    nav{
+        padding-left: 10px;
+    }
+    nav ul a{
+        font-size: 0.8rem;
+        padding: 2px;
+        margin: 5px 5px 0px 5px;
+    }
+}
